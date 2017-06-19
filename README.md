@@ -17,3 +17,12 @@ don't forget to activate it: `source activate img-reco`.
 To test that the classification module is working, you can run:
 
 `python image_classification.py -i data/cat_sleeping.JPG`.
+
+## Deploying
+https://devcenter.heroku.com/articles/getting-started-with-python#introduction
+
+To add Conda support, run the following command:
+
+`heroku config:add BUILDPACK_URL=https://github.com/kennethreitz/conda-buildpack.git`
+
+For more detils, check the following [repo](https://github.com/kennethreitz/conda-buildpack).
