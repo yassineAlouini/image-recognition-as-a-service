@@ -5,17 +5,22 @@ channels:
 dependencies:
 - conda-forge::ca-certificates=2017.4.17=0
 - conda-forge::certifi=2017.4.17=py36_0
+- conda-forge::click=6.7=py36_0
 - conda-forge::decorator=4.0.11=py36_0
+- conda-forge::flask=0.12=py36_0
 - conda-forge::freetype=2.7=1
 - conda-forge::h5py=2.7.0=np113py36_1
 - conda-forge::hdf5=1.8.18=0
 - conda-forge::ipython=6.1.0=py36_0
 - conda-forge::ipython_genutils=0.2.0=py36_0
+- conda-forge::itsdangerous=0.24=py36_1
 - conda-forge::jedi=0.10.0=py36_0
+- conda-forge::jinja2=2.9.5=py36_0
 - conda-forge::jpeg=9b=0
 - conda-forge::keras=2.0.2=py36_1
 - conda-forge::libpng=1.6.28=0
 - conda-forge::libtiff=4.0.6=7
+- conda-forge::markupsafe=1.0=py36_0
 - conda-forge::ncurses=5.9=10
 - conda-forge::olefile=0.44=py36_0
 - conda-forge::openssl=1.0.2k=0
@@ -37,6 +42,7 @@ dependencies:
 - conda-forge::tk=8.5.19=1
 - conda-forge::traitlets=4.3.2=py36_0
 - conda-forge::wcwidth=0.1.7=py36_0
+- conda-forge::werkzeug=0.11.10=py36_0
 - conda-forge::wheel=0.29.0=py36_0
 - conda-forge::xz=5.2.2=0
 - conda-forge::yaml=0.1.6=0
@@ -50,12 +56,17 @@ dependencies:
 - scipy=0.19.0=np113py36_0
 - pip:
   - certifi==2017.4.17
+  - click==6.7
   - decorator==4.0.11
+  - flask==0.12
   - h5py==2.7.0
   - ipython==6.1.0
   - ipython-genutils==0.2.0
+  - itsdangerous==0.24
   - jedi==0.10.0
+  - jinja2==2.9.5
   - keras==2.0.2
+  - markupsafe==1.0
   - olefile==0.44
   - pexpect==4.2.1
   - pickleshare==0.7.3
@@ -71,4 +82,5 @@ dependencies:
   - theano==0.9.0
   - traitlets==4.3.2
   - wcwidth==0.1.7
+  - werkzeug==0.11.10
   - wheel==0.29.0
