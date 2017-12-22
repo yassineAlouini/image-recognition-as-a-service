@@ -76,7 +76,6 @@ dependencies:
   - ptyprocess==0.5.1
   - pygments==2.2.0
   - pyyaml==3.12
-  - setuptools==33.1.1.post20170320
   - simplegeneric==0.8.1
   - six==1.10.0
   - theano==0.9.0
