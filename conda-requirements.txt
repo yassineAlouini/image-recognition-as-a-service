@@ -1,7 +1,7 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: linux-64
-Using Anaconda Cloud api site https://api.anaconda.org
+# Using Anaconda Cloud api site https://api.anaconda.org
 freetype=2.8=hab7d2ae_1
 jpeg=9b=h024ee3a_2
 libgcc-ng=7.2.0=h7cc24e2_2
