@@ -4,7 +4,6 @@
 
 import numpy as np
 
-import cv2
 import keras.preprocessing.image as image_utils
 from keras.applications.imagenet_utils import (decode_predictions,
                                                preprocess_input)
@@ -40,13 +39,9 @@ def classifier_cli():
     parser.add_argument("-i", "--image", required=True,
                         help="path to the input image")
     args = vars(parser.parse_args())
-    orig = cv2.imread(args["image"])
     img_clf = ImageClassifier()
     top_label = img_clf.get_top_label(args["image"])
-    cv2.putText(orig, "Top label: {}".format(top_label), TEXT_POSITION,
-                cv2.FONT_HERSHEY_SIMPLEX, 0.9, TEXT_COLOR, 2)
-    cv2.imshow("Classification", orig)
-    cv2.waitKey(0)
+    logger.info(top_label)
 
 if __name__ == '__main__':
     classifier_cli()
