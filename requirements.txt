@@ -27,3 +27,4 @@ traitlets==4.3.2
 wcwidth==0.1.7
 werkzeug==0.11.10
 wheel==0.29.0
+tensorflow
