@@ -2,9 +2,6 @@
 # http://www.pyimagesearch.com/2016/08/10/imagenet-classification-with-python-and-keras/
 
 
-# TODO: Use logger instead of print statements.
-import logging
-
 import numpy as np
 
 import cv2
@@ -12,6 +9,7 @@ import keras.preprocessing.image as image_utils
 from keras.applications.imagenet_utils import (decode_predictions,
                                                preprocess_input)
 from keras.applications.resnet50 import ResNet50
+from utils import logger
 
 TEXT_COLOR = (255, 255, 255)
 IMG_SIZE = (224, 224)
