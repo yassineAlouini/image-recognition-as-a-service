@@ -1,6 +1,6 @@
 from flask import Flask
 
-from image_classification import ImageClassifier
+# from image_classification import ImageClassifier
 
 app = Flask(__name__)
 
