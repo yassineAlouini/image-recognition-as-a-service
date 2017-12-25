@@ -3,7 +3,7 @@
 ## Description
 
 This is the accompanying repository for the fourth installment in the Keras
-blog post series.
+blog post series. You can find it [here](https://dsotb.quora.com)
 
 ## Installation
 
@@ -23,11 +23,5 @@ To test that the classification module is working, you can run:
 
 ## Deploying
 
-https://devcenter.heroku.com/articles/getting-started-with-python#introduction
-
-To add Conda support, run the following command:
-
-`heroku buildpacks:set https://github.com/trib3/conda-buildpack.git -a <app_name>`
-
-
-For more detils, check the following [repo](https://github.com/trib3/conda-buildpack).
+The deployment process is explained in the blog post, in the
+**Deploying to Heroku** section.

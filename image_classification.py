@@ -1,4 +1,4 @@
-# Inspired from this blog post:
+# Some of the code here is inspired from this blog post:
 # http://www.pyimagesearch.com/2016/08/10/imagenet-classification-with-python-and-keras/
 
 
@@ -41,7 +41,7 @@ def classifier_cli():
     args = vars(parser.parse_args())
     img_clf = ImageClassifier()
     top_label = img_clf.get_top_label(args["image"])
-    logger.info(top_label)
+    logger.info(f"The top label for the  uploaded image is: {top_label}")
 
 if __name__ == '__main__':
     classifier_cli()

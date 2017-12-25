@@ -26,7 +26,6 @@ def upload_img():
         filename = secure_filename(f.filename)
         img_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         f.save(img_path)
-        top_label = img_clf.get_top_label(img_path)
         return redirect(url_for('rec_img', filename=filename))
     else:
         return render_template('upload.html')
