@@ -4,6 +4,7 @@ from flask import Flask
 
 app = Flask(__name__)
 PORT = 33507
+HOST = '0.0.0.0'
 
 
 @app.route('/')
@@ -12,4 +13,4 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(port=PORT)
+    app.run(host=HOST, port=PORT)
