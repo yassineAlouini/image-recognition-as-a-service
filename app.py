@@ -19,6 +19,7 @@ def test():
     """
     test_path = os.path.join(os.path.dirname(
         os.path.realpath(__file__)), 'data', 'cat_awake.JPG')
+    print(test_path)
     img_clf = ImageClassifier()
     top_label = img_clf.get_top_label(test_path)
     return top_label
