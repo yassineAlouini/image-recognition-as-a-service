@@ -3,6 +3,7 @@ from flask import Flask
 # from image_classification import ImageClassifier
 
 app = Flask(__name__)
+PORT = 33507
 
 
 @app.route('/')
@@ -11,4 +12,4 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=33507)
+    app.run(port=PORT)
