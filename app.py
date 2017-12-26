@@ -3,7 +3,6 @@ import os
 from flask import Flask, redirect, render_template, request, url_for
 from werkzeug.utils import secure_filename
 
-import keras.preprocessing.image as image_utils
 from image_classification import ImageClassifier
 
 DATA_FOLDER_PATH = os.path.join(

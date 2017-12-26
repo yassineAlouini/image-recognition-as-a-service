@@ -10,9 +10,7 @@ from keras.applications.imagenet_utils import (decode_predictions,
 from keras.applications.resnet50 import ResNet50
 from utils import logger
 
-TEXT_COLOR = (255, 255, 255)
 IMG_SIZE = (224, 224)
-TEXT_POSITION = (10, 30)
 
 
 class ImageClassifier(object):
